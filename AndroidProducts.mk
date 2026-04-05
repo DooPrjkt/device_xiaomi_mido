@@ -14,4 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_mido.mk
+    $(LOCAL_DIR)/matrixx_mido.mk
+
+COMMON_LUNCH_CHOICES := \
+    matrixx_mido-userdebug \
+    matrixx_mido-user \
+    matrixx_mido-eng

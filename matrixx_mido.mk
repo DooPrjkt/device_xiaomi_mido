@@ -24,17 +24,20 @@ AB_OTA_UPDATER := false
 $(call inherit-product, device/xiaomi/mido/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/matrixx/config/common_full_phone.mk)
 
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Custom stuff
-EVO_BUILD_TYPE := Official
+MATRIXX_MAINTAINER := Doo
 TARGET_USES_LEGACY_BOOTANIMATION := true
+TARGET_INCLUDE_PIXEL_LAUNCHER := false
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := false
-TARGET_USES_PICO_GAPPS := true
+BYPASS_CHARGE_SUPPORTED := false
+WITH_GMS_AICORE := false
+WITH_GMS := false
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := mido
